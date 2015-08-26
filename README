@@ -1,0 +1,7 @@
+A skelton app using gulp to organize a build a riot project. Some key features that this includePaths
+
+1. Tests using test'em
+2. Pulls css/sass out of tags and compiles into own files
+
+
+More documentation to come.
