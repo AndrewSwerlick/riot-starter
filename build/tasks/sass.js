@@ -7,8 +7,10 @@ var config       = require('../config').sass;
 var autoprefixer = require('gulp-autoprefixer');
 var replace      = require('gulp-replace');
 var concat       = require('gulp-concat');
+var gulpFilter   = require('gulp-filter');
 
 gulp.task('sass', function () {
+  var filter = gulpFilter(['**/*.tag'],{restore: true});
   return gulp.src(config.src)
     .pipe(replace(/^[\s\S]*?<style>|<\/style>[\s\S]*$|^(?![\s\S]*<style>)[\s\S]*$/g, ''))
     .pipe(concat('tags.scss'))

@@ -43,7 +43,8 @@
     "riotify": "~0.1.2",
     "transformify": "~0.1.2",
     "vinyl-source-stream": "~0.1.1",
-    "watchify": "^2.2.1"
+    "watchify": "^2.2.1",
+    "gulp-filter": "^3.0.1"
   },
   "devDependencies": {
     "gulp-watch": "^4.1.1",
